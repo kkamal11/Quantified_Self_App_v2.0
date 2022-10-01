@@ -1,0 +1,89 @@
+/* LOADING SPINNER */
+.loader {
+    display: inline-block;
+    border: 4px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 4px solid rgb(246, 206, 6);
+    width: 40px;
+    height: 40px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 0;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(9, 137, 201);
+    border-radius: 6px;
+}
+
+.reduce-opacity {
+    /* filter: blur(2px);
+  -webkit-filter: blur(2px); */
+    opacity: 0.04;
+}
+
+
+table {
+    table-layout: fixed;
+}
+
+table td {
+    word-wrap: break-word;
+}
+
+
+.router-link-active {
+    color: blue;
+}
+
+.avatar {
+    width: 6em;
+    height: 6em;
+}
+
+.avatar::after {
+    content: attr(data-label);
+    font-family: "Readex Pro", sans-serif;
+    color: #ffffff;
+}
+
+hr {
+    border-top: 1.4px solid blue;
+}
+
+#footer {
+    background-color: rgb(128, 123, 133);
+}
+
