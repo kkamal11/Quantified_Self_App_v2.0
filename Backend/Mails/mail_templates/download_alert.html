@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Monthly Report</title>
+    <style>
+        #top-head{
+            color: chocolate;
+            margin: auto;
+            text-align: center;
+            border-bottom: 2px solid blue;
+        }
+        .content{
+            margin: 30px 30px 0 30px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div id="top-head" class="content">
+        <h2 style="margin-bottom: 0;">Quantified Self App</h2>
+        <h3 style="color: rgb(239, 62, 62);">Download alert</h3>
+    </div>
+    <div class="content">
+        <p>Dear {{username}},</p>
+        <p>
+           This mail is an alert that you have just downloaded the following attached file. 
+        </p>
+        <p>
+            Please contact support if it were not you. <br><br><br>
+            Thank you for being with us.<br>
+            Stay healthy and safe.
+        </p>
+    </div>
+    <div class="content" style="opacity: 0.6;">
+        Best Regards,<br>
+        Quantified Self App team
+    </div>
+</body>
+</html>
