@@ -1,5 +1,6 @@
 # Quantified_Self_App_v2.0
 An advanced and highly interactive self tracking web app equippped with numerous features. There is complete separation of frontend and backend. The backend is API-based having very tight token-based authentication. It is offers the following features:
+
 - Perform CRUD operations on trackers and logs.
 - Graphical visualization of progress over time.
 - Export tracker and log data in the form of pdf and csv files.
@@ -11,6 +12,7 @@ An advanced and highly interactive self tracking web app equippped with numerous
 - Dark Mode, Responsive and elegant UI across all devices.
 
 <h1>Technologies Used</h1>
+
 - HTML/CSS
 - JavaScript
 - Vuejs
