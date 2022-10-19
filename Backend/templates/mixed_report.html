@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            line-height: 1.5;
+        }
+        .name {
+            font-family: Helvetica, sans-serif;
+            color: rgb(244, 244, 247);
+            text-decoration: underline;
+            padding: 20px;
+        }
+        .center{
+            text-align: center;
+        }
+        .tracker-name {
+            color: rgb(69, 69, 20);
+            font-size: x-large;
+            margin-bottom: 10px;
+        }
+        .header{
+            background-color: grey;
+            margin: 0;
+        }
+        .content{
+            background-color: rgb(246, 241, 189);
+            padding: 20px 0 20px 0;
+        }
+        .main-text {
+            border: 1px solid indigo;
+            margin: 0 10% 0 10%;
+            border-radius: 30px;
+            padding: 10px;
+            background-color: rgb(251, 243, 170) !important;
+            color: rgb(83, 82, 82);
+        }
+        .tracker-details{
+            margin-left: 10%;
+        }
+        .log-details {
+           margin: 0 0 10px 10%;
+        }
+        li{
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+        .src{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 15%;
+        }
+        span{
+            color: rgb(40, 40, 40);
+        }
+        footer{
+            background-color: rgb(218, 215, 178);
+            text-align: center;
+            padding: 20px;
+            border-top: 1.5px solid indigo;
+            position: relative;
+            bottom: 0;
+        }
+        footer a{
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="name center">Hi, {{username}}</h1>
+        <p class="center" style="padding: 0 0 20px 0; color: aliceblue; font-size: large; font-weight: bolder;">Here is your monthly report for all active trackers.</p>
+    </div>
+    <hr>
+    <div class="content">
+        <h2 class="center" style="margin-bottom: 20px; color: rgb(247, 78, 31);">{{month}} Report</h2>
+        <div class="main-text">
+            {% if tracker_or_logs == [] %}
+                <p class="center" style="font-weight: bolder; font-size: x-large; color: brown;">You have not created any tracker yet.</p>
+            {% else %}
+                {% for tracker in trackers_or_logs %}
+                    <div class="tracker-details">
+                        <h3 class="tracker-name">{{ loop.index }}. {{ tracker[0].name}} Tracker</h3>
+                        <p><span>Description</span>: {{ tracker[0].description }}</p>
+                        <p><span>Type</span>: {{ tracker[0].type }}</p>
+                        <p><span>Created On</span>: {{ tracker[0].time }}</p>
+                        <p><span>Setting</span>: {{tracker[0].setting}}</p>
+                        <p><span>Last tracked Time</span>: {{ tracker[0].last_tracked_time }}</p>
+                        <p><span>Last logged value</span>: {{ tracker[0].last_logged_value }}</p>
+                    </div>
+                    <h4 class="center" style="margin: 30px 0 0 0; color: rgb(247, 78, 31);">Logged Data:</h4>
+                    {% if tracker[1] == [] %}
+                        <p class="center" style="margin-bottom: 30px;font-weight: bolder; font-size: medium; color: brown;">You have not logged in any value yet.</p>
+                    {% else %}
+                        <div class="log-details">
+                            <ol type="a">
+                                {% for log in tracker[1] %}
+                                    <li>
+                                        <p><span>Logged Time</span>: {{ log.time }}</p>
+                                        <p><span>Value</span>: {{ log.value }}</p>
+                                        <p><span>Note</span>: {{ log.note }}</p>
+                                    </li>
+                                {% endfor %}
+                                </ol>
+                        </div>
+                        {% if not loop.last %}
+                            <hr size="4px" style="width: 300px; margin:auto;margin-bottom: 30px; background-color:green;border-radius: 20px;">
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
+            {% endif %}
+        </div>
+    </div>
+    <footer>
+        <p>|| <a href="http://127.0.0.1:5500/">visit site</a> || </p>
+    </footer>
+</body>
+</html>

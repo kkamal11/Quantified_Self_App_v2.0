@@ -1,0 +1,23 @@
+*{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.name{
+    font-family: Helvetica, sans-serif;
+    color: blue;
+}
+.tracker-name{
+    color: yellow;
+}
+
+.tracker{
+    margin-bottom: 200px;
+    color: rgb(42, 41, 41);
+}
+
+.current_user{
+    text-align: center;
+    text-decoration: underline;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracker Report</title>
+    <style>
+        .name {
+            font-family: Helvetica, sans-serif;
+            color: blue;
+        }
+        .center{
+            text-align: center;
+        }
+        .tracker-name {
+            color: rgb(69, 69, 20);
+            font-size: x-large;
+        }
+
+        .main-text {
+            margin-top: 60px;
+            color: rgb(42, 41, 41);
+        }
+
+        .current_user {
+            text-decoration: underline;
+        }
+        span{
+            font-weight: 700;
+        }
+        .margin-bottom{
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="name center">Hi, {{username}}</h1>
+    <p class="center">Here is your pdf log report for all active trackers' data.</p>
+    <hr>
+    <h2 class="center" style="margin-top: 60px;">Trackers' Log Report</h2>
+    {% for elem in trackers_or_logs %}
+    <div class="main-text">
+        <h3 class="tracker-name">{{ loop.index }}. {{ elem[0] }} Tracker</h3>
+        {% if elem[1] == [] %}
+            <div class="center margin-bottom">Not data has been logged in for this tracker.</div>
+        {% else %}
+            <ul>
+            {% for log in elem[1] %}
+            <li>
+                <p><span>Logged Time</span>: {{ log.time }}</p>
+                <p><span>Value</span>: {{ log.value }}</p>
+                <p><span>Note</span>: {{ log.note }}</p>
+            </li>
+            {% if not loop.last %}
+                <hr style="width: 200px; margin:auto; color: chartreuse; text-decoration: dotted;">
+            {% endif %}
+            {% endfor %}
+            </ul>
+        {% endif %}
+    </div>
+    <hr style="width: 300px; margin:auto">
+    {% endfor %}
+</body>
+
+</html>

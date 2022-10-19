@@ -1,0 +1,5 @@
+S. No.,Tracker Name,Description,Created On,Type,Setting,Last Tracked Time,Last Logged Value
+1,Time Duration,This is a time duration tracker.,2022-09-14 21:20:40.253782,Time Duration,Setting is not applicable to this tracker,2022-09-14 22:37:26.378918,60 Seconds
+2,Running,To keep track of my running,2022-09-14 22:19:59.258902,Numerical,Setting is not applicable to this tracker,2022-09-14 22:39:56.006103,5.0
+3,My Mood,To keep track of my frequently changing mood,2022-09-14 22:21:02.035128,Multiple Choice,"Sad,Happy,Joyous,Neutral,Excited",2022-09-14 22:40:23.934564,Neutral
+4,Boolean,This is a boolean tracker,2022-09-14 22:41:03.888714,Boolean,Setting is not applicable to this tracker,2022-09-14 22:41:03.888721,Not logged yet.
