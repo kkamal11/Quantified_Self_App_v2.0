@@ -13,7 +13,7 @@ An advanced and highly interactive self tracking web app equippped with numerous
 - Daily reminder on google chat using webhooks.
 - Token based authentication and secure login/logout.
 - Downloadable summary report in pdf and csv formats for trackers, logs or both together.
-- Use of caching to enhace performanc.
+- Use of caching to enhace performance.
 - Dark Mode, Responsive and elegant UI across all devices.
 
 <h1>Technologies Used</h1>
