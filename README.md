@@ -1,4 +1,9 @@
-<h1 align="center"> Quantified_Self_App_v2.0</h1>
+<div align="center">
+  <h1> Quantified_Self_App_v2.0</h1>
+  <hr width="400px">
+  <img src="Images/tech_im.png" width="250px" />
+  <hr width="400px">
+</div>
 An advanced and highly interactive self tracking web app equippped with numerous features. There is complete separation of frontend and backend. The backend is API-based having very tight token-based authentication. It is offers the following features:
 
 - Perform CRUD operations on trackers and logs.
