@@ -1,4 +1,4 @@
-# Quantified_Self_App_v2.0
+<h1 align="center"> Quantified_Self_App_v2.0</h1>
 An advanced and highly interactive self tracking web app equippped with numerous features. There is complete separation of frontend and backend. The backend is API-based having very tight token-based authentication. It is offers the following features:
 
 - Perform CRUD operations on trackers and logs.
@@ -28,11 +28,13 @@ An advanced and highly interactive self tracking web app equippped with numerous
 <h1>Database:</h1><h4> SQLite, Redis</h4>
 
 # Database schema design
-<img src="Images/db.png" width="800px" />
+<div align="center">
+  <img src="Images/db.png" width="800px" />
+</div>
 <br>
 
 # Screenshots
-<table>
+<table border="1">
   <tr>
     <td><img src="Images/IMG_20221023_094104.jpg" width="400px" /></td>
     <td><img src="Images/IMG_20221023_094143.jpg" width="400px" /></td>
