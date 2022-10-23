@@ -25,4 +25,45 @@ An advanced and highly interactive self tracking web app equippped with numerous
 - Bash
 - Sendgrid
 - Weasyprint
-<h1>Database:</h1><h3> SQLite, Redis</h3>
+<h1>Database:</h1><h4> SQLite, Redis</h4>
+
+# Database schema design
+<img src="Images/db.png" width="800px" />
+<br>
+
+# Screenshots
+<table>
+  <tr>
+    <td><img src="Images/IMG_20221023_094104.jpg" width="400px" /></td>
+    <td><img src="Images/IMG_20221023_094143.jpg" width="400px" /></td>
+    <td><img src="Images/IMG_20221023_094126.jpg" width="400px" /></td>
+  </tr>
+  <tr>
+    <td colspan="3" align="center"><img src="Images/home.png" width="800px" /></td>
+  </tr>
+  <tr>
+    <td colspan="3" align="center"><img src="Images/data.png" width="800px" /></td>
+  </tr>
+  <tr>
+    <td colspan="3" align="center"><img src="Images/account.png" width="800px" /></td>
+  </tr>
+  <tr>
+    <td colspan="3" align="center"><img src="Images/graph1.png" width="800px" /></td>
+  </tr>
+  <tr>
+    <td><img src="Images/pie.png" width="400px" /></td>
+    <td><img src="Images/polar.png" width="400px" /></td>
+    <td><img src="Images/track.png" width="400px" /></td>
+  </tr>
+  <tr>
+    <td colspan="3" align="center"><img src="Images/popup.png" width="800px" /></td>
+  </tr>
+   <tr>
+    <td colspan="3" align="center"><img src="Images/dark.png" width="800px" /></td>
+  </tr>
+  <tr>
+    <td><img src="Images/graph_d.png" width="400px" /></td>
+    <td><img src="Images/chat.png" width="400px" /></td>
+    <td><img src="Images/polar_d.png" width="400px" /></td>
+  </tr>
+</table>
