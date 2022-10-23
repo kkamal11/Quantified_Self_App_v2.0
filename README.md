@@ -16,6 +16,7 @@ An advanced and highly interactive self tracking web app equippped with numerous
 - HTML/CSS
 - JavaScript
 - Vuejs
+- Chart.js
 - Tailwind CSS
 - Python
 - Flask and its several extensions
