@@ -3,8 +3,8 @@ import sendgrid
 import base64
 from sendgrid.helpers.mail import Mail, Email, To, Content, HtmlContent, Attachment,FileContent, FileName, FileType, Disposition, ContentId
 from bs4 import BeautifulSoup
-#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
 
+api_key = 'My Api Key here'
 
 def send_email(receiver_email,subject,message,attachment_files=[],file_type='PDF'):
     from_email = Email("kishorkamalkml@gmail.com")  # my verified sender
@@ -37,7 +37,7 @@ def send_email(receiver_email,subject,message,attachment_files=[],file_type='PDF
                 attachment.content_id = ContentId('Example Content ID')
                 mail.attachment = attachment
                 
-        sendgrid_client = sendgrid.SendGridAPIClient(api_key='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')
+        sendgrid_client = sendgrid.SendGridAPIClient(api_key=api_key)
         # Get a JSON-ready representation of the Mail object
         mail_json = mail.get()
         # Send an HTTP POST request to /mail/send
